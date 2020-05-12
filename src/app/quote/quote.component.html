@@ -1,0 +1,21 @@
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<div class="row">
+    <div class="col-md-6">
+        <h1>Quotes</h1>
+        <ul>
+            <div *ngFor='let quote of quotes; let i = index'>
+                <!-- <li appHighlight>{{quote.name}}</li> -->
+                <li>
+                    {{quote.id}} The quote is : {{quote.quote}} & The author is : {{quote.quoteAuthor}}
+                </li>
+                <button class="btn btn-success" (click)='toggleDetails(i)'><i class="fa fa-caret-down"></i>&nbsp; Show Details</button>
+                <app-quote-detail *ngIf='quote.showQuoteDetails' [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-detail>
+            </div>
+        </ul>
+    </div>
+    <div class="col-md-6">
+        <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+    </div>
+</div>

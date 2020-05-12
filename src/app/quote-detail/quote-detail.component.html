@@ -1,0 +1,4 @@
+<p>This quote was submitted by:{{quote.personSubmitting}}</p>
+<button class="btn-success" (click)="upVoteButtonClick()" style="border-radius: 15px; border: none; width: 150px; height: 40px;"><i class="fa fa-thumbs-up"></i>&nbsp; Upvote &nbsp; {{numberOfUpVotes}}</button>
+<button class="btn-success" (click)="downVoteButtonClick()" style="border-radius: 15px; border: none; width: 150px; height: 40px;"><i class="fa fa-thumbs-down"></i>&nbsp; Downvote &nbsp; {{numberOfDownVotes}}</button>
+<button class="btn-danger" (click)= 'quoteDelete(true)' style="border-radius: 15px; border: none; width: 150px; height: 40px;"><i class="fa fa-trash"></i>&nbsp; Delete &nbsp;</button>

@@ -1,0 +1,47 @@
+<div class="container container-fluid">
+    <h2 class="text-center">Create a new Quote</h2>
+    <hr>
+    <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
+        <div class="form-group">
+  
+            <label for="quote">Quote</label>
+            <input type="text" class="form-control" id="quote" [(ngModel)]="newQuote.quote" name="quote" #quote='ngModel' required>
+
+            <!-- Testing realtime display  for typing quote-->
+            Display {{newQuote.quote}}
+            <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
+                <p>The quote text is required!</p>
+            </div>
+        </div>
+        <div class="form-group">
+  
+            <label for="author">Author</label>
+            <input type="text" class="form-control" id="author" [(ngModel)]="newQuote.quoteAuthor" name="author" #author='ngModel' required>
+
+            <!-- Testing realtime display for typing author -->
+            Display {{newQuote.quoteAuthor}}
+            <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
+                <p>The author's name is required!</p>
+            </div>
+        </div>
+        <div class="form-group">
+
+            <label for="person">Person Submitting</label>
+            <input type='text' class="form-control" id="person" [(ngModel)]="newQuote.personSubmitting" name="person" #person='ngModel' required>
+
+            <!-- Testing realtime display for person submitting quote -->
+            Display {{newQuote.personSubmitting}}
+            <div [hidden]="person.valid || person.pristine" class="alert alert-danger">
+                <p>The submitter's name is required!</p>
+            </div>
+        </div>
+        <button type="submit" type="reset" class="btn btn-success"><i class="fa fa-plus"></i>&nbsp; Add Quote</button>
+    </form>
+</div>
+<script>
+    function clearFormFields(){
+        document.getElementById("quote").placeholder = "new";
+        document.getElementById("author").value = "";
+        document.getElementById("person").value = "";
+    }
+</script>
