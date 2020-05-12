@@ -1,5 +1,6 @@
 # THE QUOTES APP
-   https://jimmy-oss.github.io/goal/ 
+   https://jimmy-oss.github.io/goal/
+     ![screenshot](./screenshot/screen.jpg)
 # PROJECT DESCRIPTION
 This project is comprised of a display which shows all the quotes saved on the system.
 It consists of a form which add more quotes into the system.
