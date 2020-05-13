@@ -5,7 +5,7 @@
 
 # PROJECT DESCRIPTION
 This project is comprised of a display which shows all the quotes saved on the system.
-It consists of a form which add more quotes into the system.
+    It consists of a form which add more quotes into the system.
 # THE HEADER DESCRIPTION SECTION
 The user gets a header section at the top of the page with the title of the app.
 # BEHAVIOUR DRIVEN DEVELOPMENT
