@@ -12,7 +12,7 @@ The user gets a header section at the top of the page with the title of the app.
 The project consists of components which are found in the app such as the header& footer.
 These are components which help to finalize the index.html in details.
 # TECHNOLOGIES USED
-These are:<ul>
+  These are:<ul>
         <li>CSS</li>
         <li>Markdown</li>
         <li>Angular cli</li>
