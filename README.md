@@ -1,5 +1,4 @@
 # THE QUOTES APP
-   https://jimmy-oss.github.io/goal/
    
    ![screenshot](./screenshot/screen.jpg)
 
