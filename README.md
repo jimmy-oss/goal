@@ -24,4 +24,4 @@ These are components which help to finalize the index.html in details.
 If there is a pending information I can use to improve the project please feel free to email,
 that is jimmynjonge51@gmail.com.
 # THE LICENSE
-The app is under mit license.
+  The app is under mit license.
